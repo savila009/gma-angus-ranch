@@ -17,33 +17,34 @@
         }
         body { font-family: 'Open Sans', sans-serif; color: #333; background: var(--bg); }
         h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; color: var(--primary); font-weight: 700; }
-        h2 { text-transform: uppercase; letter-spacing: 1px; text-align: center; margin-bottom: 2rem; text-shadow: 2px 2px 1px rgba(26,54,93,0.15); }
+        h2 { text-transform: uppercase; letter-spacing: 1px; text-align: center; margin-bottom: 2rem; }
         .navbar { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 0.75rem 0; }
         .navbar-brand { display: flex; align-items: center; padding: 0; }
         .navbar-brand img { height: 58px; width: auto; display: block; }
         .nav-link { color: var(--primary) !important; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; }
         .nav-link:hover { color: var(--accent) !important; }
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('images/pen_ash-cow-4527006.jpg') center/cover no-repeat;
-            min-height: 70vh; color: white; display: flex; align-items: center; text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)), url('images/pen_ash-cow-4527006.jpg') center/cover no-repeat;
+            min-height: 75vh; color: white; display: flex; align-items: center; text-align: center;
         }
-        .hero h1 { color: white; font-size: 3.2rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
-        .hero .lead { font-size: 1.4rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+        .hero h1 { color: white; font-size: 3.6rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); margin-bottom: 0.5rem; }
+        .hero .tagline { font-size: 1.3rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 1.5rem; }
         .btn-primary { background: var(--accent); border-color: var(--accent); }
         .btn-primary:hover { background: #1e4e8c; border-color: #1e4e8c; }
-        .feature-card { background: white; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
-        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card { background: white; border: none; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block; height: 100%; }
+        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); color: inherit; }
+        .feature-card .icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; }
         .section { padding: 5rem 0; }
-        .red-section { background: var(--primary); color: var(--light); }
-        .red-section h2, .red-section h3 { color: var(--light); }
+        .cta-section { background: var(--primary); color: white; }
+        .cta-section h2 { color: white; }
         footer { background: #1a202c; color: #ccc; padding: 3rem 0 1.5rem; }
         footer a { color: var(--light); text-decoration: none; }
-        .sale-banner { background: var(--accent); color: white; padding: 1rem 0; text-align: center; }
+        .sale-banner { background: var(--accent); color: white; padding: 0.75rem 0; text-align: center; font-size: 0.95rem; }
     </style>
 </head>
 <body>
     <div class="sale-banner">
-        <strong>Private Treaty Bulls & Females Available</strong> — Contact us to view our current offering
+        <strong>Private Treaty Bulls & Females Available</strong> — Call (209) 777-3786
     </div>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
@@ -69,23 +70,34 @@
     <header class="hero">
         <div class="container">
             <h1>GMA Angus Ranch</h1>
-            <p class="lead">Registered Black Angus Seedstock<br>Built for Commercial Cattlemen</p>
-            <a href="for-sale.html" class="btn btn-primary btn-lg mt-3">View Current Offering</a>
+            <p class="tagline">Functional. Performance Oriented. The Cattleman’s Kind.</p>
+            <a href="for-sale.html" class="btn btn-primary btn-lg">View Cattle for Sale</a>
         </div>
     </header>
 
     <section class="section">
         <div class="container">
-            <h2>Welcome to GMA Angus Ranch</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <p class="lead">At GMA Angus Ranch we have made every effort to produce top quality registered Angus cattle for the commercial cattleman for over 35 years.</p>
-                    <p>Located in California’s San Joaquin Valley near Merced, our program focuses on functional, performance-oriented genetics that work in real-world commercial operations. We raise cattle that are structurally sound, fertile, and productive — the kind of animals that improve your bottom line.</p>
-                    <p>Our herd is built on proven maternal strength, calving ease, and growth. Every animal we offer is selected with the commercial producer in mind.</p>
-                    <a href="about.html" class="btn btn-outline-primary">Learn More About Us</a>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="breeding.html" class="feature-card p-5 text-center">
+                        <div class="icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Breeding Program</h3>
+                        <p class="mb-0">Fertility, maternal strength, and performance built for commercial herds.</p>
+                    </a>
                 </div>
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <img src="images/kNW88.jpg" alt="Angus cattle at GMA Angus Ranch" class="img-fluid rounded shadow">
+                <div class="col-md-4">
+                    <a href="herd-sires.html" class="feature-card p-5 text-center">
+                        <div class="icon"><i class="fas fa-cow"></i></div>
+                        <h3>Herd Sires</h3>
+                        <p class="mb-0">Proven genetics selected for balanced EPDs and real-world results.</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="for-sale.html" class="feature-card p-5 text-center">
+                        <div class="icon"><i class="fas fa-tags"></i></div>
+                        <h3>Cattle for Sale</h3>
+                        <p class="mb-0">Private treaty bulls, females, and semen available year-round.</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -93,41 +105,25 @@
 
     <section class="section bg-white">
         <div class="container">
-            <h2>What We Offer</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 text-center p-4">
-                        <i class="fas fa-bullseye fa-3x mb-3" style="color: var(--accent);"></i>
-                        <h4>Breeding Program</h4>
-                        <p>Focused selection for fertility, maternal ability, calving ease, and performance that commercial operations demand.</p>
-                        <a href="breeding.html" class="btn btn-sm btn-primary mt-auto">Learn More</a>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="text-start">Raising Cattle That Work</h2>
+                    <p class="lead">For over 35 years, GMA Angus Ranch has produced registered Black Angus seedstock for commercial cattlemen.</p>
+                    <p>Located near Merced in California’s San Joaquin Valley, we focus on functional cattle that are structurally sound, fertile, and productive. Every animal we offer is selected with the commercial producer in mind.</p>
+                    <a href="about.html" class="btn btn-outline-primary">About the Ranch</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 text-center p-4">
-                        <i class="fas fa-cow fa-3x mb-3" style="color: var(--accent);"></i>
-                        <h4>Herd Sires</h4>
-                        <p>Proven sires selected for balanced EPDs and the ability to produce functional, high-performing progeny.</p>
-                        <a href="herd-sires.html" class="btn btn-sm btn-primary mt-auto">View Sires</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card h-100 text-center p-4">
-                        <i class="fas fa-tags fa-3x mb-3" style="color: var(--accent);"></i>
-                        <h4>Cattle for Sale</h4>
-                        <p>Private treaty bulls, females, and semen available. Quality genetics ready to work in your herd.</p>
-                        <a href="for-sale.html" class="btn btn-sm btn-primary mt-auto">See Offering</a>
-                    </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="images/pen_ash-cow-4527006.jpg" alt="Angus cattle at GMA Angus Ranch" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section red-section text-center">
+    <section class="section cta-section text-center">
         <div class="container">
-            <h2>Raising Cattle That Work</h2>
-            <p class="lead mb-4">From the San Joaquin Valley to commercial herds across the West — genetics built for longevity, fertility, and profit.</p>
-            <a href="contact.html" class="btn btn-light btn-lg">Contact Us Today</a>
+            <h2>Ready to Improve Your Herd?</h2>
+            <p class="lead mb-4">Call or email to discuss bulls, females, or semen availability.</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
         </div>
     </section>
 
@@ -148,7 +144,7 @@
                 </div>
             </div>
             <hr class="my-4" style="border-color: #555;">
-            <p class="text-center small mb-0">&copy; 2026 GMA Angus Ranch. All rights reserved. Designed in the spirit of Angus Media ranch websites.</p>
+            <p class="text-center small mb-0">&copy; 2026 GMA Angus Ranch. All rights reserved.</p>
         </div>
     </footer>
 
